@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Adovasio Time</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/time.css">
+</head>
+<body>
+
+  <div class="container">
+    <div class="clock" id="clock">
+      --:--:--.<span class="ms">---</span>
+    </div>
+
+    <div class="controls">
+      <label for="tz">Time zone:</label>
+      <select id="tz"></select>
+    </div>
+
+    <div class="info">
+      Authoritative time provided by <strong>time.adovasio.com</strong><br>
+      Backend time is UTC (NTP-disciplined)<br>
+      <a href="https://adovasio.com">adovasio.com</a>
+    </div>
+  </div>
+
+  <script src="/time.js" defer></script>
+</body>
+</html>
