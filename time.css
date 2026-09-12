@@ -11,14 +11,61 @@ body {
 }
 
 .time-stage {
+  position: relative;
+  box-sizing: border-box;
   display: flex;
   align-items: center;
   justify-content: center;
   min-height: 100vh;
+  min-height: 100svh;
+  padding: 4rem 1rem;
 }
 
 .container {
   text-align: center;
+}
+
+.server-badge {
+  display: inline-block;
+  margin: 0 0 1rem;
+  padding: 0.35rem 0.75rem;
+  border: 1px solid #334765;
+  border-radius: 999px;
+  background: #111e32;
+  color: #93c5fd;
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+}
+
+.scroll-cue {
+  position: absolute;
+  bottom: 1.25rem;
+  left: 1rem;
+  right: 1rem;
+  width: fit-content;
+  margin-inline: auto;
+  padding: 0.5rem;
+  color: #9ca3af;
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+.scroll-cue span {
+  margin-left: 0.35rem;
+}
+
+.scroll-cue:focus-visible {
+  outline: 2px solid #60a5fa;
+  outline-offset: 4px;
+  border-radius: 4px;
+}
+
+@media (max-height: 480px) {
+  .time-stage {
+    padding-top: 1rem;
+    padding-bottom: 3.5rem;
+  }
 }
 
 .clock {
